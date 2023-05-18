@@ -3,7 +3,7 @@
 .vscode
 .idea
 
-# Svelt
+# Svelte
 node_modules
 /build
 /.svelte-kit
@@ -11,6 +11,9 @@ node_modules
 .env
 .env.*
 !.env.example
+
+src/routes/test
+
 
 # folders
 temp
