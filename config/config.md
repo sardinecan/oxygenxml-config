@@ -36,6 +36,9 @@
         - `git --version` #git est installé par défaut sur macOs
         - `which git` # permet de savoir qu'elle version est utilisée (par défaut celle de macOs)
         - `sudo mv /usr/bin/git /usr/bin/git-apple` | or | `brew link --overwrite git` # pour utiliser la dernière version téléchargée avec homebrew
+    - Ajouter un .gitignore global
+        - git config --global core.excludesfile path/to/global/.gitignore
+        - nb : un .gitignore est présent dans ce dossier.
 - Github 
     - clé SSH [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
         - générer un clé ssh et l'ajouter à ssh-agent
