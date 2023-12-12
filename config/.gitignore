@@ -18,6 +18,8 @@ src/routes/test
 # folders
 temp
 output
+out
+html
 
 # files
 credentials.*
