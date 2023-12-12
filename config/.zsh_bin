@@ -6,7 +6,7 @@ export PATH="/opt/homebrew/bin:$PATH"
 export PATH=$PATH:/Users/josselinmorvan/files/basex/bin
 
 # Apache Ant
-export PATH=$PATH:/Users/josselinmorvan/files/apache-ant-1.10.13/bin
+export PATH=$PATH:/Users/josselinmorvan/files/apache-ant/bin
 
 # teic Stylesheets
 export PATH=$PATH:/tmp/tei/bin/
