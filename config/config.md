@@ -22,7 +22,7 @@
     - Changer la police pour `IBM Plex Mono`
     - la configuration de VS Code est synchronisée sur github, pour l'activer : 
         - cliquer sur la roue dentée en bas à gauche de la fenêtre VS Code puis sur activier la synchronisation des paramètres
-        - sur l'invite suivante cliquer sur `sign in & turn on` puis choisir `sign in with Github`
+        - sur l'invite suivante cliquer sur `sign in & turn on | se connecter` puis choisir `sign in with Github | se connecter avec Github`
         - choisir ensuite l'option `remplacer localement`
         - documentation [https://code.visualstudio.com/docs/editor/settings-sync](https://code.visualstudio.com/docs/editor/settings-sync)
 - OxygenXML [https://www.oxygenxml.com/](https://www.oxygenxml.com/)
@@ -49,6 +49,8 @@
 - oh-my-zsh [https://ohmyz.sh/#install](https://ohmyz.sh/#install)
     - installer thème `SolarizedDark` pour le terminal [https://ethanschoonover.com/solarized/](https://ethanschoonover.com/solarized/) | sur github perso #todo
     - changer la police du terminale `IBM Plex Mono`
+    - ajouter dans le fichier binaries à `~/.zshrc` la ligne `source /Users/josselinmorvan/files/dh/code-code-codex/cheatsheets/config/.zsh_bin`.
+    - ajouter dans le fichier shortcuts à `~/.zshrc` la ligne `source /Users/josselinmorvan/files/dh/code-code-codex/cheatsheets/config/.zsh_sc`.
 - Git [https://git-scm.com/](https://git-scm.com/)
     - avec Homebrew 
         - `brew install git`
