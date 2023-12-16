@@ -51,6 +51,7 @@
     - changer la police du terminale `IBM Plex Mono`
     - ajouter dans le fichier binaries à `~/.zshrc` la ligne `source /Users/josselinmorvan/files/dh/code-code-codex/cheatsheets/config/.zsh_bin`.
     - ajouter dans le fichier shortcuts à `~/.zshrc` la ligne `source /Users/josselinmorvan/files/dh/code-code-codex/cheatsheets/config/.zsh_sc`.
+    - activer les plugins `git` (activé par défaut) et `web-search` dans `~/.zshrc`. NB les plugins sont séparés par un espace.
 - Git [https://git-scm.com/](https://git-scm.com/)
     - avec Homebrew 
         - `brew install git`
@@ -130,3 +131,7 @@
     - NOTA 2 : [Converting from DOCX format](https://listserv.brown.edu/archives/cgi-bin/wa?A2=TEI-L;1123776a.1605) : "The TEI conversions from docx are better in many ways than the conversions from other the wordprocessing formats. There are also small tricks like having docx styles of 'tei_elementName' to get certain phrase-level elements converted."
     - NOTA 3 : [https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-15-Sebastian_Rahtz_-_Working_with_TEI_Stylesheets__talk.pdf](https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-15-Sebastian_Rahtz_-_Working_with_TEI_Stylesheets__talk.pdf)
     - NOTA 4 : documentation accessible dans le répertoire d'installation par exemple : `/tmp/tei/share/doc/tei-xsl/index.html` 
+
+### Autres pacquets 
+   - Bat [https://github.com/sharkdp/bat/](https://github.com/sharkdp/bat/): A cat cmd  clone with syntax highlighting and Git integration.
+      - release : [https://github.com/sharkdp/bat/releases](https://github.com/sharkdp/bat/releases)
