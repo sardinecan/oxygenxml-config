@@ -1,10 +1,7 @@
 # MacOS Basic Config
 
-## Polices de caractère
-- IBM Plex [https://www.ibm.com/plex/specs/](https://www.ibm.com/plex/specs/)
-    - Release depuis repo Github [https://github.com/IBM/plex/releases/latest](https://github.com/IBM/plex/releases/latest) (télécharger openType)
-    - Repo Github [https://github.com/IBM/plex](https://github.com/IBM/plex)
-
+## Fonts
+See [fonts](fonts/fonts.md)
 ## Logiciels 
 ### Navigateurs
 - Firefox [https://www.mozilla.org/fr/firefox/new/](https://www.mozilla.org/fr/firefox/new/)
@@ -52,6 +49,10 @@
     - ajouter dans le fichier binaries à `~/.zshrc` la ligne `source /Users/josselinmorvan/files/dh/code-code-codex/cheatsheets/config/.zsh_bin`.
     - ajouter dans le fichier shortcuts à `~/.zshrc` la ligne `source /Users/josselinmorvan/files/dh/code-code-codex/cheatsheets/config/.zsh_sc`.
     - activer les plugins `git` (activé par défaut) et `web-search` dans `~/.zshrc`. NB les plugins sont séparés par un espace.
+    - installer le thème [typewritten](https://typewritten.dev/) | sur [Github](https://github.com/reobin/typewritten)
+    	- `git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten` (NB $ZSH_CUSTOM est configuré par défaut par oh-my-zsh)
+	- dans `.zshrc` -> `ZSH_THEME="typewritten/typewritten"`
+	- et ajouter à la suite `TYPEWRITTEN_RELATIVE_PATH="adaptive"` | `TYPEWRITTEN_PROMPT_LAYOUT="pure"` | `TYPEWRITTEN_ARROW_SYMBOL="|"`.
 - Git [https://git-scm.com/](https://git-scm.com/)
     - avec Homebrew 
         - `brew install git`
