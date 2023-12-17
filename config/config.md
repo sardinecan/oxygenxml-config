@@ -2,38 +2,16 @@
 
 ## Fonts
 See [fonts](fonts/fonts.md)
-## Logiciels 
-### Navigateurs
+
+## Apps 
+### Browsers
 - Firefox [https://www.mozilla.org/fr/firefox/new/](https://www.mozilla.org/fr/firefox/new/)
 - Chrome [https://www.google.com/chrome/](https://www.google.com/chrome/)
 
-### Éditeurs
-- Webstorm [https://www.jetbrains.com/fr-fr/webstorm/](https://www.jetbrains.com/fr-fr/webstorm/)
-    - changer la police pour `IBM Plex Mono`
-    - la configuration de Webstorm est synchronisée sur le serveur jetbrain, pour l'activer : menu Webstorm/Settings/Settings Sync
-        - cliquer sur `Enable Settings Sync`
-        - dans la nouvelle fenêtre qui s'ouvre cliquer sur `Get Settings from Account`
-- Visual Studio Code [https://code.visualstudio.com/](https://code.visualstudio.com/)
-    - Activer la synchronisation des tags html/xml : 
-        - Sur macOs : ⌘ + ⇧ + p / taper dans l'invite `settings.json` (user) puis ajouter dans le document `"editor.linkedEditing": true`
-    - Changer la police pour `IBM Plex Mono`
-    - la configuration de VS Code est synchronisée sur github, pour l'activer : 
-        - cliquer sur la roue dentée en bas à gauche de la fenêtre VS Code puis sur activier la synchronisation des paramètres
-        - sur l'invite suivante cliquer sur `sign in & turn on | se connecter` puis choisir `sign in with Github | se connecter avec Github`
-        - choisir ensuite l'option `remplacer localement`
-        - documentation [https://code.visualstudio.com/docs/editor/settings-sync](https://code.visualstudio.com/docs/editor/settings-sync)
-- OxygenXML [https://www.oxygenxml.com/](https://www.oxygenxml.com/)
-    - dans Préférences/Éditeur/Formatage
-        - cocher seulement : `détecter l'indentation à l'ouverture` ; `indenter avec Entrée` ; `activer Smart Enter`
-        - Changer les valeurs de :
-            - `largeur d'indentation` : `3`
-            - `Longueur de ligne` : `10000`
-    - dans Préférences/Éditeur/Formatage/XML :
-        - cocher : `Conserver les lignes vides` ; `Conserver les sauts de ligne dans les attributs` ; `Indenter les éléments en ligne`
-        - dans `Espacement des éléments/Conserver les espaces`, ajouter : `//p//*` ; `//head//*` ; `//dateline//*` ; `//signed//*` ; `//choice`
-    - dans Preferences/XML/XSLT/FO/XQuery/XSLT/Saxon/Saxon HE/PE/EE
-        - décocher la case `Étendre les attributs par défaut ("-expand")`
-    - changer la police pour `IBM Plex Mono`
+### Text Editors
+- Webstorm: see [webstorm](webstorm/webstorm.md)
+- Visual Studio Code: see [Visual Studio Code](visualStudioCode/vs.md)
+- OxygenXML: see [Oxygen XML](oxygenXML/oxygenXML.md)
 
 ### Gestionnaire de Pacquets
 - Homebrew [https://brew.sh/index_fr](https://brew.sh/index_fr)

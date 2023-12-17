@@ -7,7 +7,7 @@ Font: [https://www.ibm.com/plex/specs/](https://www.ibm.com/plex/specs/)
 
 Github: [https://github.com/IBM/plex](https://github.com/IBM/plex)
 
-Release: [https://github.com/IBM/plex/releases/latest](https://github.com/IBM/plex/releases/latest) (télécharger openType)
+Release: [https://github.com/IBM/plex/releases/latest](https://github.com/IBM/plex/releases/latest)
 
 ### Jetbrains Mono
 Font: [https://www.jetbrains.com/fr-fr/lp/mono/](https://www.jetbrains.com/fr-fr/lp/mono/)
@@ -22,3 +22,6 @@ Font: [http://adobe-fonts.github.io/source-code-pro/](http://adobe-fonts.github.
 Github: [https://github.com/adobe-fonts/source-code-pro](https://github.com/adobe-fonts/source-code-pro)
 
 Release: [https://github.com/adobe-fonts/source-code-pro/releases/latest](https://github.com/adobe-fonts/source-code-pro/releases/latest)
+
+## Bibliography
+[Typogram](https://typogram.co/font-discovery/)
