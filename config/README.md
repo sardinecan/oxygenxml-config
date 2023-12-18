@@ -58,7 +58,7 @@ See [fonts](fonts/fonts.md)
         - `which git` # to know which git version is used (the macOs one by default)
         - `sudo mv /usr/bin/git /usr/bin/git-apple` | or | `brew link --overwrite git` # to switch to the homebrew version if needed
     - to configure a global gitignore  
-        - `git config --global core.excludesfile path/to/.gitignore` 
+        - `git config --global core.excludesfile $HOME/files/dh/code-code-codex/cheatsheets/config/git/.gitignore` 
 - Github 
     - SSH key [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
         - create a ssh key and add it to ssh-agent
