@@ -3,6 +3,9 @@
 [https://www.oxygenxml.com/](https://www.oxygenxml.com/)
 
 ## Settings
+My settings are stored in the `globalSettings.xml` file and the transformation scenarios are saved in `transformation.scenarios`.
+To import settings and scenarios: `options/(importer les options globales | importer les scénarios de transformation)` 
+
 ### Format
 - `Préférences/Éditeur/Formatage`: 
 	- check only : `détecter l'indentation à l'ouverture` ; `indenter avec Entrée` ; `activer Smart Enter`
