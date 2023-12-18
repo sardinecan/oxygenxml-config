@@ -1,116 +1,70 @@
 # MacOS Basic Config
+My macOs setup for coding! Enjoy! ;)
 
 ## Fonts
 See [fonts](fonts/fonts.md)
 
-## Apps 
-### Browsers
+## Browsers
 - Firefox [https://www.mozilla.org/fr/firefox/new/](https://www.mozilla.org/fr/firefox/new/)
 - Chrome [https://www.google.com/chrome/](https://www.google.com/chrome/)
 
-### Text Editors
+## Text Editors
 - Webstorm: see [webstorm](webstorm/webstorm.md)
 - Visual Studio Code: see [Visual Studio Code](visualStudioCode/vs.md)
 - OxygenXML: see [Oxygen XML](oxygenXML/oxygenXML.md)
+- Vim: see [Vim](vim/vim.md)
 
-### Gestionnaire de Pacquets
-- Homebrew [https://brew.sh/index_fr](https://brew.sh/index_fr)
+## Package Manager
+- Homebrew: see [https://brew.sh/index_fr](https://brew.sh/index_fr)
 
-### Traitement images
+## Image/video editing
 - Suite Affinity [https://affinity.serif.com/fr/](https://affinity.serif.com/fr/)
 - Final Cut pro 
 
-### Programmation et développement web
-- oh-my-zsh [https://ohmyz.sh/#install](https://ohmyz.sh/#install)
-    - installer thème `SolarizedDark` pour le terminal [https://ethanschoonover.com/solarized/](https://ethanschoonover.com/solarized/) | sur github perso #todo
-    - changer la police du terminale `IBM Plex Mono`
-    - ajouter dans le fichier binaries à `~/.zshrc` la ligne `source /Users/josselinmorvan/files/dh/code-code-codex/cheatsheets/config/.zsh_bin`.
-    - ajouter dans le fichier shortcuts à `~/.zshrc` la ligne `source /Users/josselinmorvan/files/dh/code-code-codex/cheatsheets/config/.zsh_sc`.
-    - activer les plugins `git` (activé par défaut) et `web-search` dans `~/.zshrc`. NB les plugins sont séparés par un espace.
-    - installer le thème [typewritten](https://typewritten.dev/) | sur [Github](https://github.com/reobin/typewritten)
-    	- `git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten` (NB $ZSH_CUSTOM est configuré par défaut par oh-my-zsh)
-	- dans `.zshrc` -> `ZSH_THEME="typewritten/typewritten"`
-	- et ajouter à la suite `TYPEWRITTEN_RELATIVE_PATH="adaptive"` | `TYPEWRITTEN_PROMPT_LAYOUT="pure"` | `TYPEWRITTEN_ARROW_SYMBOL="|"`.
-- Git [https://git-scm.com/](https://git-scm.com/)
-    - avec Homebrew 
-        - `brew install git`
-        - `git --version` #git est installé par défaut sur macOs
-        - `which git` # permet de savoir qu'elle version est utilisée (par défaut celle de macOs)
-        - `sudo mv /usr/bin/git /usr/bin/git-apple` | or | `brew link --overwrite git` # pour utiliser la dernière version téléchargée avec homebrew
-    - Configurer un gitignore global 
-        - `git config --global core.excludesfile path/to/.gitignore`
-- Github 
-    - clé SSH [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
-        - générer un clé ssh et l'ajouter à ssh-agent
-        - ajouter la nouvelle clé ssh au compte github
-- NodeJS [https://nodejs.org/en/](https://nodejs.org/en/) (de préférence LTS)
-- Vim 
-    - créer à la racine un fichier `.vimrc`
-    - ajouter :
-    ```txt
-    "default vim
-    source $VIMRUNTIME/defaults.vim
+## Terminal/shell
+- terminal
+    - install `SolarizedDark` theme [https://ethanschoonover.com/solarized/](https://ethanschoonover.com/solarized/);
+    - change font for `IBM Plex Mono`.
+- ZSH
+    - Oh-my-zsh: see [https://ohmyz.sh/#install](https://ohmyz.sh/#install)
+        - add plugins: `web-search` and `aliases` to `~/.zshrc` (`git` is enable by default): `plugins=(git web-search aliases)`;
+    - Install theme [typewritten](https://typewritten.dev/) | [Github](https://github.com/reobin/typewritten):
+    	- `git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten` (NB $ZSH_CUSTOM is a default variable with oh-my-zsh)
+	    - change `ZSH_THEME="typewritten/typewritten"` in `~/.zshrc`
+	    - and add lines `TYPEWRITTEN_RELATIVE_PATH="adaptive"` | `TYPEWRITTEN_PROMPT_LAYOUT="pure"` | `TYPEWRITTEN_ARROW_SYMBOL="|"`.
+    - Bat [https://github.com/sharkdp/bat/](https://github.com/sharkdp/bat/): A cat cmd clone with syntax highlighting and Git integration.
+        - release : [https://github.com/sharkdp/bat/releases](https://github.com/sharkdp/bat/releases)
+    - My custom path and aliases, just add to `~/.zshrc`:
+        - (path binaries): `source $HOME/files/dh/code-code-codex/cheatsheets/config/zsh/.zsh_bin`;
+        - (aliases): `source $HOME/files/dh/code-code-codex/cheatsheets/config/zsh/.zsh_sc`.
     
-    "Enable line number
-    set number
-    
-    "Enable syntax highlight
-    syntax on
-    filetype on
-    colorscheme default
- 
-    "Enable autoindent
-    set autoindent
-    ```
-- Apache Ant [https://ant.apache.org/](https://ant.apache.org/)
-    - ajouter Ant dans le $Path
+## Programming languages
 - Julia Lang [https://julialang.org/](https://julialang.org/)
-- Python []()
-    - avec Homebrew
-- TEI Stylesheets [https://github.com/TEIC/Stylesheets](https://github.com/TEIC/Stylesheets)
-    - Installation
-        - Pour MacOS, télécharger le fork [https://github.com/sardinecan/Stylesheets](https://github.com/sardinecan/Stylesheets)
-            - pour information, les modifications apportées au fichier `Makefile` pour l'installation avec MacOs X
-                - variable PREFIX : `/usr` par `/tmp/tei`
-                - ligne `cp --preserve=timestamps bin/transformtei ${PREFIX}/bin` par `cp -p bin/transformtei ${PREFIX}/bin`
-                - ligne `cp --preserve=timestamps source/p5subset.xml ${PREFIX}/source` par `cp -p source/p5subset.xml ${PREFIX}/source`
-                - ligne `perl -p -i -e 's+^APPHOME=.*+APPHOME=/usr/share/xml/tei/stylesheet+' ${PREFIX}/bin/transformtei` par `perl -p -i -e 's+^APPHOME=.*+APPHOME=${PREFIX}/share/xml/tei/stylesheet+' ${PREFIX}/bin/transformtei`
-        - aller dans répertoire : `cd path/to/local/Stylesheets`
-        - installation : `make install`
-            - si la commande Make ne s'exécute pas il est probable sur Xcode commande line soit manquant, pour l'installer : `xcode-select --install`
-            - si besoin de changer une variable pour l'installation : `make PREFIX=destination/path/for/installation install`
-        - ajouter les `binaries` dans le `$PATH`
-            - ajouter la ligne 
-                ```txt
-                # teic Stylesheets
-                export PATH=$PATH:/tmp/tei/bin/
-                ```
-    - Ajouter un `profile` personalisé
-        - créer un profile dans le sous-répertoire `Stylesheets/profile` selon le pattern suivant : `profiles/$PROFILENAME/$FORMAT/from.xsl` ou `profiles/$PROFILENAME/$FORMAT/to.xsl` par exemple : 
-            - `profiles/local/docx/from.xsl`
-        - pour importer le traitement par défaut, ajouter dans la feuille xslt créée une règle `xsl:import` , par exemple :
-            - `<xsl:import href="../../default/docx/from.xsl" />`
-            - ```xml
-                <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
-                 xmlns:xs="http://www.w3.org/2001/XMLSchema"
-                 xmlns:w="http://schemas.openxmlformats.org/wordprocessingml/2006/main"
-                 xmlns:wne="http://schemas.microsoft.com/office/word/2006/wordml"
-                 xmlns:wp="http://schemas.openxmlformats.org/drawingml/2006/wordprocessingDrawing"
-                 xmlns="http://www.tei-c.org/ns/1.0"
-                 exclude-result-prefixes="xs w"
-                 version="2.0">
-                    <xsl:import href="../../default/docx/from.xsl"/>
-                    <!-- nouvelles règles-->
-                    <xsl:template match="/">[…]</xsl:template>
-                </xsl:stylesheet>```
-        - résintaller les stylesheets : `cd path/to/tei/Stylesheets ; make install`
-    - appeler une transformation : par exemple `docxtotei inputFile outputFile`
-    - appeler une transformation avec un profile personnalisé : `docxtotei --profile=$PROFILENAME inputFile outputFile` par exemple `docxtotei --profile=local inputFile outputFile`
-    - NOTA : Note that if your $FORMAT is docx, this directory must contain a file template.docx which is used to create .docx files from. See the sample in the default profile.
-    - NOTA 2 : [Converting from DOCX format](https://listserv.brown.edu/archives/cgi-bin/wa?A2=TEI-L;1123776a.1605) : "The TEI conversions from docx are better in many ways than the conversions from other the wordprocessing formats. There are also small tricks like having docx styles of 'tei_elementName' to get certain phrase-level elements converted."
-    - NOTA 3 : [https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-15-Sebastian_Rahtz_-_Working_with_TEI_Stylesheets__talk.pdf](https://dixit.uni-koeln.de/wp-content/uploads/2015/04/Camp2-15-Sebastian_Rahtz_-_Working_with_TEI_Stylesheets__talk.pdf)
-    - NOTA 4 : documentation accessible dans le répertoire d'installation par exemple : `/tmp/tei/share/doc/tei-xsl/index.html` 
+- Python [https://www.python.org/](https://www.python.org/)
+    - install with Homebrew: `brew install python`
+    - for more informations about Homebrew and Python: [https://docs.brew.sh/Homebrew-and-Python](https://docs.brew.sh/Homebrew-and-Python)
 
-### Autres pacquets 
-   - Bat [https://github.com/sharkdp/bat/](https://github.com/sharkdp/bat/): A cat cmd  clone with syntax highlighting and Git integration.
-      - release : [https://github.com/sharkdp/bat/releases](https://github.com/sharkdp/bat/releases)
+## version control system
+- Git [https://git-scm.com/](https://git-scm.com/)
+    - install with Homebrew 
+        - `brew install git`
+        - `git --version` #git comes by default with macOs
+        - `which git` # to know which git version is used (the macOs one by default)
+        - `sudo mv /usr/bin/git /usr/bin/git-apple` | or | `brew link --overwrite git` # to switch to the homebrew version if needed
+    - to configure a global gitignore  
+        - `git config --global core.excludesfile path/to/.gitignore` 
+- Github 
+    - SSH key [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
+        - create a ssh key and add it to ssh-agent
+        - add the new key to the github acount.
+
+## Libraries
+- NodeJS [https://nodejs.org/en/](https://nodejs.org/en/) (LTS preferred)
+
+- Apache Ant [https://ant.apache.org/](https://ant.apache.org/)
+    - add Ant to the $Path
+
+- TEI Stylesheets [https://github.com/TEIC/Stylesheets](https://github.com/TEIC/Stylesheets)
+    - for MacOS install see: [tei Stylesheets](teiStylesheets/teiStylesheets.md) 
+
+   

@@ -6,7 +6,7 @@
 ### Format
 - `Préférences/Éditeur/Formatage`: 
 	- check only : `détecter l'indentation à l'ouverture` ; `indenter avec Entrée` ; `activer Smart Enter`
-	- modify values for: `largeur d'indentation` : `3` and `Longueur de ligne` : `10000`
+	- change values for: `largeur d'indentation` : `3` and `Longueur de ligne` : `10000`
 - `Préférences/Éditeur/Formatage/XML`:
 	- check: `Conserver les lignes vides` ; `Conserver les sauts de ligne dans les attributs` ; `Indenter les éléments en ligne`
 	- add `//p//*` ; `//head//*` ; `//dateline//*` ; `//signed//*` ; `//choice` to `Espacement des éléments/Conserver les espaces`

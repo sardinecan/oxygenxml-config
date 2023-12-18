@@ -3,10 +3,10 @@
 export PATH="/opt/homebrew/bin:$PATH"
 
 # BaseX
-export PATH=$PATH:/Users/josselinmorvan/files/basex/bin
+export PATH=$PATH:$HOME/files/basex/bin
 
 # Apache Ant
-export PATH=$PATH:/Users/josselinmorvan/files/apache-ant/bin
+export PATH=$PATH:$HOME/files/apache-ant/bin
 
 # teic Stylesheets
 export PATH=$PATH:/tmp/tei/bin/

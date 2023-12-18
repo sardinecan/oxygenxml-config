@@ -1,5 +1,5 @@
 # folders shortcuts
-alias dh='cd /Users/josselinmorvan/files/dh'
+alias dh='cd $HOME/files/dh'
 
 #apps shortcuts
 alias ff='open -a /Applications/Firefox.app'
