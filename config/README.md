@@ -59,6 +59,7 @@ See [fonts](fonts/fonts.md)
         - `sudo mv /usr/bin/git /usr/bin/git-apple` | or | `brew link --overwrite git` # to switch to the homebrew version if needed
     - to configure a global gitignore  
         - `git config --global core.excludesfile $HOME/files/dh/code-code-codex/cheatsheets/config/git/.gitignore` 
+    - see [git folder](git/git.md)
 - Github 
     - SSH key [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
         - create a ssh key and add it to ssh-agent
