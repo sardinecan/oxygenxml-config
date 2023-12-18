@@ -28,6 +28,7 @@ See [fonts](fonts/fonts.md)
 - ZSH
     - Oh-my-zsh: see [https://ohmyz.sh/#install](https://ohmyz.sh/#install)
         - add plugins: `web-search` and `aliases` to `~/.zshrc` (`git` is enable by default): `plugins=(git web-search aliases)`;
+    	- Wiki: [Oh-my-zsh Wiki](https://github.com/ohmyzsh/wiki/tree/main)
     - Install theme [typewritten](https://typewritten.dev/) | [Github](https://github.com/reobin/typewritten):
     	- `git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten` (NB $ZSH_CUSTOM is a default variable with oh-my-zsh)
 	    - change `ZSH_THEME="typewritten/typewritten"` in `~/.zshrc`
@@ -37,7 +38,12 @@ See [fonts](fonts/fonts.md)
     - My custom path and aliases, just add to `~/.zshrc`:
         - (path binaries): `source $HOME/files/dh/code-code-codex/cheatsheets/config/zsh/.zsh_bin`;
         - (aliases): `source $HOME/files/dh/code-code-codex/cheatsheets/config/zsh/.zsh_sc`.
-    
+
+- Other Themes
+    - Pure: [https://github.com/sindresorhus/pure](https://github.com/sindresorhus/pure)
+    - Hyper snazzy color scheme: [https://github.com/sindresorhus/hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy)a
+    - Molokai color scheme for Vim: [https://github.com/tomasr/molokai](https://github.com/tomasr/molokai)
+
 ## Programming languages
 - Julia Lang [https://julialang.org/](https://julialang.org/)
 - Python [https://www.python.org/](https://www.python.org/)
@@ -65,6 +71,4 @@ See [fonts](fonts/fonts.md)
     - add Ant to the $Path
 
 - TEI Stylesheets [https://github.com/TEIC/Stylesheets](https://github.com/TEIC/Stylesheets)
-    - for MacOS install see: [tei Stylesheets](teiStylesheets/teiStylesheets.md) 
-
-   
+    - for MacOS install see: [tei Stylesheets](teiStylesheets/teiStylesheets.md)    
