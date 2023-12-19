@@ -27,12 +27,15 @@ See [fonts](fonts/fonts.md)
     - change font for `IBM Plex Mono`.
 - ZSH
     - Oh-my-zsh: see [https://ohmyz.sh/#install](https://ohmyz.sh/#install)
-        - add plugins: `web-search` and `aliases` to `~/.zshrc` (`git` is enable by default): `plugins=(git web-search aliases)`;
+        - add plugins: `web-search` and `aliases` to `~/.zshrc` (`git` is enable by default): `plugins=(git web-search aliases zsh-syntax-highlighting)`;
     	- Wiki: [Oh-my-zsh Wiki](https://github.com/ohmyzsh/wiki/tree/main)
     - Install theme [typewritten](https://typewritten.dev/) | [Github](https://github.com/reobin/typewritten):
     	- `git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten` (NB $ZSH_CUSTOM is a default variable with oh-my-zsh)
 	    - change `ZSH_THEME="typewritten/typewritten"` in `~/.zshrc`
 	    - and add lines `TYPEWRITTEN_RELATIVE_PATH="adaptive"` | `TYPEWRITTEN_PROMPT_LAYOUT="pure"` | `TYPEWRITTEN_ARROW_SYMBOL="|"`.
+    - Zsh-syntax-highlighting: see [https://github.com/zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
+    	- Just `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
+	- activate the plugin in `~/.zshrc`: `plugins=( [plugins...] zsh-syntax-highlighting)`
     - Bat [https://github.com/sharkdp/bat/](https://github.com/sharkdp/bat/): A cat cmd clone with syntax highlighting and Git integration.
         - release : [https://github.com/sharkdp/bat/releases](https://github.com/sharkdp/bat/releases)
     - My custom path and aliases, just add to `~/.zshrc`:
