@@ -17,6 +17,7 @@ src/routes/test
 
 # folders
 temp
+tmp
 output
 out
 html
