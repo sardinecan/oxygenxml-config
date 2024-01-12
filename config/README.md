@@ -32,7 +32,13 @@ See [fonts](fonts/fonts.md)
     - Install theme [typewritten](https://typewritten.dev/) | [Github](https://github.com/reobin/typewritten):
     	- `git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten` (NB $ZSH_CUSTOM is a default variable with oh-my-zsh)
 	    - change `ZSH_THEME="typewritten/typewritten"` in `~/.zshrc`
-	    - and add lines `TYPEWRITTEN_RELATIVE_PATH="adaptive"` | `TYPEWRITTEN_PROMPT_LAYOUT="pure"` | `TYPEWRITTEN_ARROW_SYMBOL="|"`.
+	    - and add lines 
+	    ```shell
+	    TYPEWRITTEN_RELATIVE_PATH="adaptive" 
+	    TYPEWRITTEN_PROMPT_LAYOUT="pure"
+	    TYPEWRITTEN_ARROW_SYMBOL="|"
+	    TYPEWRITTEN_COLOR_MAPPINGS="primary:red"
+	    ```
     - Zsh-syntax-highlighting: see [https://github.com/zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
     	- Just `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
 	- activate the plugin in `~/.zshrc`: `plugins=( [plugins...] zsh-syntax-highlighting)`
