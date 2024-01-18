@@ -5,7 +5,8 @@ This is a family of XSLT 2.0 stylesheets to transform TEI XML documents to vario
 - download fork at [https://github.com/sardinecan/Stylesheets](https://github.com/sardinecan/Stylesheets)
 
 For your information, here are the changes made to the original makefile 
-  - variable PREFIX : `/usr` par `/tmp/tei`
+  - variable PREFIX : `/usr` > `/tmp/tei`
+  	- NB `/tmp` directory is cleaned up by macOS every 3 days by default [see apple forum](https://forums.developer.apple.com/forums/thread/71382)
   - line `cp --preserve=timestamps bin/transformtei ${PREFIX}/bin` > `cp -p bin/transformtei ${PREFIX}/bin`
   - line `cp --preserve=timestamps source/p5subset.xml ${PREFIX}/source` > `cp -p source/p5subset.xml ${PREFIX}/source`
   - line `perl -p -i -e 's+^APPHOME=.*+APPHOME=/usr/share/xml/tei/stylesheet+' ${PREFIX}/bin/transformtei` > `perl -p -i -e 's+^APPHOME=.*+APPHOME=${PREFIX}/share/xml/tei/stylesheet+' ${PREFIX}/bin/transformtei`
