@@ -67,7 +67,9 @@ See [fonts](fonts/fonts.md)
         - `which git` # to know which git version is used (the macOs one by default)
         - `sudo mv /usr/bin/git /usr/bin/git-apple` | or | `brew link --overwrite git` # to switch to the homebrew version if needed
     - to configure a global gitignore  
-        - `git config --global core.excludesfile $HOME/files/dh/code-code-codex/cheatsheets/config/git/.gitignore` 
+        - `git config --global core.excludesfile $HOME/files/dh/code-code-codex/cheatsheets/config/git/.gitignore`
+    - to ignore modified (but not committed) files in git
+        - `git update-index --assume-unchanged path/to/file`
     - see [git folder](git/git.md)
 
 - Github 
