@@ -63,7 +63,7 @@ See [fonts](fonts/fonts.md)
 - Julia Lang [https://julialang.org/](https://julialang.org/)
     - Activating project environment in Julia REPL automatically [see https://bkamins.github.io/julialang/2020/05/10/julia-project-environments.html](https://bkamins.github.io/julialang/2020/05/10/julia-project-environments.html)
     - create a `~/.julia/config/startup.jl` with following content:
-````julia
+```julia
 println("Greetings!")
 using Pkg
 if isfile("Project.toml") && isfile("Manifest.toml")
