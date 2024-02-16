@@ -61,6 +61,18 @@ See [fonts](fonts/fonts.md)
 
 ## Programming languages
 - Julia Lang [https://julialang.org/](https://julialang.org/)
+    - Activating project environment in Julia REPL automatically [see https://bkamins.github.io/julialang/2020/05/10/julia-project-environments.html](https://bkamins.github.io/julialang/2020/05/10/julia-project-environments.html)
+    - create a `~/.julia/config/startup.jl` with following content:
+````julia
+println("Greetings!")
+using Pkg
+if isfile("Project.toml") && isfile("Manifest.toml")
+    Pkg.activate(".")
+else
+    Pkg.activate("/pbs/home/j/jmorvan/juliaEnv")
+end
+```
+
 - Python [https://www.python.org/](https://www.python.org/)
     - install with Homebrew: `brew install python`
     - for more informations about Homebrew and Python: [https://docs.brew.sh/Homebrew-and-Python](https://docs.brew.sh/Homebrew-and-Python)
