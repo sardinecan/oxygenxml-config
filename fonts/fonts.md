@@ -2,6 +2,23 @@
 NB : openType format prefered
 
 ## Mono for coding
+### Monolisa [p]
+Font: [https://www.monolisa.dev/](https://www.monolisa.dev/)
+
+### Monaspace
+Font: [https://monaspace.githubnext.com/](https://monaspace.githubnext.com/)
+
+Github: [https://github.com/githubnext/monaspace](https://github.com/githubnext/monaspace)
+
+Release: [https://github.com/githubnext/monaspace/releases/latest](https://github.com/githubnext/monaspace/releases/latest)
+
+### Julia mono
+Font: [https://juliamono.netlify.app/](https://juliamono.netlify.app/)
+
+Github: [https://github.com/cormullion/juliamono](https://github.com/cormullion/juliamono)
+
+Release: [https://github.com/cormullion/juliamono/releases/latest](https://github.com/cormullion/juliamono/releases/latest)
+
 ### IBM Plex
 Font: [https://www.ibm.com/plex/specs/](https://www.ibm.com/plex/specs/)
 
