@@ -6,6 +6,8 @@
 ### Font
 To change font: `Code/Réglages/Paramètres` or `⌘,` and add `IBM Plex Mono`at first in `Editor: Font Family`
 
+To set specific font for a language see documentation: [https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings](https://code.visualstudio.com/docs/getstarted/settings#_language-specific-editor-settings). See also: [https://worldofzero.com/posts/enable-font-ligatures-vscode/](https://worldofzero.com/posts/enable-font-ligatures-vscode/)
+
 ### Sync html/xml opening/closing tags
 `⌘ + ⇧ + p`, type `settings.json` (user) and add `"editor.linkedEditing": true`.
 
