@@ -40,5 +40,12 @@ Github: [https://github.com/adobe-fonts/source-code-pro](https://github.com/adob
 
 Release: [https://github.com/adobe-fonts/source-code-pro/releases/latest](https://github.com/adobe-fonts/source-code-pro/releases/latest)
 
+### Monoid
+Font: [https://larsenwork.com/monoid/](https://larsenwork.com/monoid/)
+
+Github: [https://github.com/larsenwork/monoid](https://github.com/larsenwork/monoid)
+
+Release: [https://github.com/larsenwork/monoid/releases](https://github.com/larsenwork/monoid/releases)
+
 ## Bibliography
 [Typogram](https://typogram.co/font-discovery/)
