@@ -1,14 +1,85 @@
+---
+title: 'System Setup'
+date: '2022-05-17'
+author: 'jmorvan'
+keywords: 'config ; dev ; installation'
+---
+
 # systemSetup
-SystemSetup is a repo with My macOs/Unix system setup for dev/coding! Enjoy! ;)
+SystemSetup is a repo with my macOs/Unix system setup for dev/coding! Enjoy! ;)
 
-## Basex
-Tips to setup BaseX. [BaseX folder](basex/basex.md)
+## Gestionnaires de paquets
+Installer Homebrew [https://brew.sh/index_fr](https://brew.sh/index_fr) (macOS et Linux).
 
-## NodeJs
-Tips to install and setup NodeJs. [Node folder](nodejs/node.md)
+## Git [https://git-scm.com/](https://git-scm.com/)
+### Installation avec Homebrew
+- `brew install git`
+- `git --version` #git est livré avec macOS
+- `which git` # Pour connaître quelle version est utilisé (la version de macOs par defaut)
+- `sudo mv /usr/bin/git /usr/bin/git-apple` | ou | `brew link --overwrite git` # pour switcher sur la version de homebrew si nécessaire
+
+### Configuration du `.gitignore` global : 
+Cloner le repo [systemSetup](https://github.com/sardinecan/systemSetup/), puis entrer la commande suivante dans le terminal :
+```shell
+git config --global core.excludesfile $HOME/files/dh/systemSetup/git/.gitignore
+```
 
 ## Fonts
-See [fonts](fonts/fonts.md)
+Voir [fonts](fonts.md)
+
+## Terminal/shell
+### Personnalisation du terminal
+Ajouter le thème Hyper snazzy color scheme [https://github.com/sindresorhus/hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy) et l'activer par défaut.
+
+Autres thèmes :
+    - Pure: [https://github.com/sindresorhus/pure](https://github.com/sindresorhus/pure) 
+    - Molokai color scheme for Vim: [https://github.com/tomasr/molokai](https://github.com/tomasr/molokai)
+
+### Changer le shell pour `zsh`
+Depuis macOS Catalina, `zsh` est le shell par défaut sur macOS. Pour les versions antérieurs ou sur d'autres systèmes, il peut être nécessaire d'installer `zsh` ou de l'activer. Pour l'installation et l'activation, voir [Installing-ZSH](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH).
+
+Une fois le z shell installé et activé, nous avons accès au fichier `~/.zshrc`.
+
+### Installation de [`oh-my-zsh`](https://github.com/ohmyzsh/ohmyzsh/wiki) et personnalisation
+Wiki: [Oh-my-zsh Wiki](https://github.com/ohmyzsh/wiki/tree/main)
+
+Installation :
+```shell
+sh -c "$(wget https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+
+Activer les plugins: `web-search` et `aliases` dans `~/.zshrc` (`git` est activé par défaut) :
+```bash
+plugins=(git web-search aliases)
+```
+
+Installer le thème [typewritten](https://typewritten.dev/) | [Github](https://github.com/reobin/typewritten)
+```shell
+git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten
+# NB $ZSH_CUSTOM est une variable par defaut de oh-my-zsh)
+```
+
+Dans `~/.zshrc`, modifier la ligne :
+```bash
+ZSH_THEME="typewritten/typewritten"
+```
+et ajouter les lignes suivante : 
+```shell
+TYPEWRITTEN_RELATIVE_PATH="adaptive"
+TYPEWRITTEN_PROMPT_LAYOUT="pure"
+TYPEWRITTEN_ARROW_SYMBOL="|"
+TYPEWRITTEN_COLOR_MAPPINGS="primary:red"
+```
+
+Si ce n'est pas déjà fait, cloner le repo [systemSetup](https://github.com/sardinecan/systemSetup/) et insérer les lignes : 
+- `source $HOME/files/dh/systemSetup/zsh/.zsh_bin`;
+- `source $HOME/files/dh/systemSetup/zsh/.zsh_sc`
+dans `~/.zshrc` afin d'ajouter les _aliases_ et _custom path_ personnels.
+	    
+<!--Bat [https://github.com/sharkdp/bat/](https://github.com/sharkdp/bat/): A cat cmd clone with syntax highlighting and Git integration. release : [https://github.com/sharkdp/bat/releases](https://github.com/sharkdp/bat/releases)-->
+
+
+
 
 ## Browsers
 - Firefox [https://www.mozilla.org/fr/firefox/new/](https://www.mozilla.org/fr/firefox/new/)
@@ -20,49 +91,15 @@ See [fonts](fonts/fonts.md)
 - OxygenXML: see [Oxygen XML](oxygenXML/oxygenXML.md)
 - Vim: see [Vim](vim/vim.md)
 
-## Package Manager (macOs)
-- Homebrew: see [https://brew.sh/index_fr](https://brew.sh/index_fr)
-
 ## Image/video editing
 - Suite Affinity [https://affinity.serif.com/fr/](https://affinity.serif.com/fr/)
 - Final Cut pro
-
-## Terminal/shell
-- terminal
-    - install `SolarizedDark` theme [https://ethanschoonover.com/solarized/](https://ethanschoonover.com/solarized/);
-    - change font for `IBM Plex Mono`.
-- ZSH
-    - Oh-my-zsh: see [https://ohmyz.sh/#install](https://ohmyz.sh/#install)
-        - add plugins: `web-search` and `aliases` to `~/.zshrc` (`git` is enable by default): `plugins=(git web-search aliases zsh-syntax-highlighting)`;
-    	- Wiki: [Oh-my-zsh Wiki](https://github.com/ohmyzsh/wiki/tree/main)
-    - Install theme [typewritten](https://typewritten.dev/) | [Github](https://github.com/reobin/typewritten):
-    	- `git clone https://github.com/reobin/typewritten.git $ZSH_CUSTOM/themes/typewritten` (NB $ZSH_CUSTOM is a default variable with oh-my-zsh)
-	    - change `ZSH_THEME="typewritten/typewritten"` in `~/.zshrc`
-	    - and add lines
-	    ```shell
-	    TYPEWRITTEN_RELATIVE_PATH="adaptive"
-	    TYPEWRITTEN_PROMPT_LAYOUT="pure"
-	    TYPEWRITTEN_ARROW_SYMBOL="|"
-	    TYPEWRITTEN_COLOR_MAPPINGS="primary:red"
-	    ```
-    - Zsh-syntax-highlighting: see [https://github.com/zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
-    	- Just `git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting`
-	- activate the plugin in `~/.zshrc`: `plugins=( [plugins...] zsh-syntax-highlighting)`
-    - Bat [https://github.com/sharkdp/bat/](https://github.com/sharkdp/bat/): A cat cmd clone with syntax highlighting and Git integration.
-        - release : [https://github.com/sharkdp/bat/releases](https://github.com/sharkdp/bat/releases)
-    - My custom path and aliases, just add to `~/.zshrc`:
-        - (path binaries): `source $HOME/files/dh/systemSetup/zsh/.zsh_bin`;
-        - (aliases): `source $HOME/files/dh/systemSetup/zsh/.zsh_sc`.
-
-- Other Themes
-    - Pure: [https://github.com/sindresorhus/pure](https://github.com/sindresorhus/pure)
-    - Hyper snazzy color scheme: [https://github.com/sindresorhus/hyper-snazzy](https://github.com/sindresorhus/hyper-snazzy)a
-    - Molokai color scheme for Vim: [https://github.com/tomasr/molokai](https://github.com/tomasr/molokai)
 
 ## Programming languages
 - Julia Lang [https://julialang.org/](https://julialang.org/)
     - Activating project environment in Julia REPL automatically [see https://bkamins.github.io/julialang/2020/05/10/julia-project-environments.html](https://bkamins.github.io/julialang/2020/05/10/julia-project-environments.html)
     - create a `~/.julia/config/startup.jl` with following content:
+
 ```julia
 println("Greetings!")
 using Pkg
@@ -77,18 +114,7 @@ end
     - install with Homebrew: `brew install python`
     - for more informations about Homebrew and Python: [https://docs.brew.sh/Homebrew-and-Python](https://docs.brew.sh/Homebrew-and-Python)
 
-## Version control system
-- Git [https://git-scm.com/](https://git-scm.com/)
-    - install with Homebrew
-        - `brew install git`
-        - `git --version` #git comes by default with macOs
-        - `which git` # to know which git version is used (the macOs one by default)
-        - `sudo mv /usr/bin/git /usr/bin/git-apple` | or | `brew link --overwrite git` # to switch to the homebrew version if needed
-    - to configure a global gitignore
-        - `git config --global core.excludesfile $HOME/files/dh/systemSetup/git/.gitignore`
-    - to ignore modified (but not committed) files in git
-        - `git update-index --assume-unchanged path/to/file`
-    - see [git folder](git/git.md)
+
 
 - Github
     - SSH key [https://docs.github.com/en/authentication/connecting-to-github-with-ssh](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
